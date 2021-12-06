@@ -9,6 +9,7 @@ class HotelListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hotel_list)
+        setTitle("ODABAK")
     }
     fun loadHotel(view : View){
         val intent = Intent(applicationContext, HotelActivity ::class.java)

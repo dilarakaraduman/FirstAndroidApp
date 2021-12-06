@@ -22,10 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setTitle("ODABAK")
 
-        // get the references from layout file
         textview_date = this.CheckInDate
-
-        // create an OnDateSetListener
 
     }
 
@@ -44,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         DatePickerDialog(
             this@MainActivity,
             dateSetListener,
-            // set DatePickerDialog to point to today's date when it loads up
+
             cal.get(Calendar.YEAR),
             cal.get(Calendar.MONTH),
             cal.get(Calendar.DAY_OF_MONTH)
@@ -52,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateDateInView(textView: TextView) {
-        val myFormat = "dd/MM/yyyy" // mention the format you need
+        val myFormat = "dd/MM/yyyy"
         val sdf = SimpleDateFormat(myFormat, Locale.US)
         textView!!.text = sdf.format(cal.getTime())
     }

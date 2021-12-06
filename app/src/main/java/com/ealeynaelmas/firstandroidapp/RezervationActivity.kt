@@ -9,6 +9,7 @@ class RezervationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rezervation)
+        setTitle("ODABAK")
     }
 
     fun loadMainPage(view : View){
