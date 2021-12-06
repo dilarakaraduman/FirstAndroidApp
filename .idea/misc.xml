@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_hotel.xml" value="0.2" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_profile.xml" value="0.4" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_rezervation.xml" value="0.264" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/hotel_list.xml" value="0.4" />
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/KotlinAndroidProjects/app/src/main/res/layout/activity_main.xml" value="0.24094202898550723" />
       </map>

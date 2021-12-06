@@ -1,46 +1,64 @@
 package com.ealeynaelmas.firstandroidapp
 
-import android.content.Context
-import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
+import android.app.DatePickerDialog
+import android.content.Intent
+import android.widget.DatePicker
+import android.widget.TextClock
+import org.w3c.dom.Text
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
+    var textview_date: TextView? = null
+    var cal = Calendar.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setTitle("ODABAK")
+
+        // get the references from layout file
+        textview_date = this.CheckInDate
+
+        // create an OnDateSetListener
 
     }
 
-    fun showWarning(view : View){
-        val warningMessage = AlertDialog.Builder(this@MainActivity)
-        val keyTextValue = keyText.text.toString();
-        warningMessage.setTitle(keyTextValue)
-        warningMessage.setMessage(getDataFromDatabase(keyTextValue))
-        warningMessage.setPositiveButton("Tamam",DialogInterface.OnClickListener({dialogInterface, i ->}))
-        warningMessage.show()
-    }
-
-    fun getDataFromDatabase(str : String) : String{
-        try {
-            val database = this.openOrCreateDatabase("Ders", Context.MODE_PRIVATE, null)
-            database.execSQL("CREATE TABLE IF NOT EXISTS Ders_odev (id VARCHAR PRIMARY KEY, value VARCHAR)")
-            //database.execSQL("INSERT INTO Ders_odev (id, value) VALUES ('bil359', 'Hello World from database')")
-            val query = "SELECT * FROM Ders_odev WHERE id = '${str}'"
-            val cursor = database.rawQuery(query, null)
-
-            cursor.moveToFirst()
-            val valueColumnIndex = cursor.getColumnIndex("value")
-            val data = cursor.getString(valueColumnIndex)
-
-            cursor.close()
-            return data
-        } catch (e: Exception) {
-            // handler
+    fun dateListener(text: View){
+        var dateSetListener = object : DatePickerDialog.OnDateSetListener {
+            override fun onDateSet(
+                view: DatePicker, year: Int, monthOfYear: Int,
+                dayOfMonth: Int
+            ) {
+                cal.set(Calendar.YEAR, year)
+                cal.set(Calendar.MONTH, monthOfYear)
+                cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+                updateDateInView(text as TextView)
+            }
         }
-        return "Data yok !"
+        DatePickerDialog(
+            this@MainActivity,
+            dateSetListener,
+            // set DatePickerDialog to point to today's date when it loads up
+            cal.get(Calendar.YEAR),
+            cal.get(Calendar.MONTH),
+            cal.get(Calendar.DAY_OF_MONTH)
+        ).show()
+    }
+
+    private fun updateDateInView(textView: TextView) {
+        val myFormat = "dd/MM/yyyy" // mention the format you need
+        val sdf = SimpleDateFormat(myFormat, Locale.US)
+        textView!!.text = sdf.format(cal.getTime())
+    }
+
+    fun loadHotelList(view : View){
+        val intent = Intent(applicationContext, HotelListActivity ::class.java)
+        startActivity(intent)
     }
 }
