@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHotel">
+
+  <Button
+      android:id="@+id/button4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="loadMainPage"
+      android:text="Anasayfa"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/button7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Otel Ekle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/hotelCost3" />
+
+  <TextView
+      android:id="@+id/textView24"
+      android:layout_width="360dp"
+      android:layout_height="45dp"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="25dp"
+      android:text="Otel Ekle"
+      android:textColor="#ad168b"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView20"
+      android:layout_width="124dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="25dp"
+      android:text="Otel İsmi"
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+  <EditText
+      android:id="@+id/HotelName"
+      android:layout_width="235dp"
+      android:layout_height="40dp"
+      android:layout_marginEnd="25dp"
+      android:inputType="text"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView29"
+      app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+  <TextView
+      android:id="@+id/textView28"
+      android:layout_width="124dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="25dp"
+      android:text="Otel Şehir"
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+  <EditText
+      android:id="@+id/hotelCity"
+      android:layout_width="235dp"
+      android:layout_height="40dp"
+      android:layout_marginEnd="25dp"
+      android:inputType="text"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView29"
+      app:layout_constraintTop_toBottomOf="@+id/HotelName" />
+
+  <TextView
+      android:id="@+id/textView30"
+      android:layout_width="124dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="25dp"
+      android:text="Otel Konum"
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+  <EditText
+      android:id="@+id/hotelLocation"
+      android:layout_width="235dp"
+      android:layout_height="40dp"
+      android:layout_marginEnd="25dp"
+      android:inputType="text"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView29"
+      app:layout_constraintTop_toBottomOf="@+id/hotelCity" />
+
+  <TextView
+      android:id="@+id/textView31"
+      android:layout_width="124dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="25dp"
+      android:text="Otel Fiyat"
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+  <EditText
+      android:id="@+id/hotelCost"
+      android:layout_width="235dp"
+      android:layout_height="40dp"
+      android:layout_marginEnd="25dp"
+      android:inputType="text"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView29"
+      app:layout_constraintTop_toBottomOf="@+id/hotelLocation" />
+
+  <TextView
+      android:id="@+id/textView32"
+      android:layout_width="358dp"
+      android:layout_height="25dp"
+      android:layout_marginTop="20dp"
+      android:text="Otelin Niteliklerini Seçiniz."
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/hotelCost" />
+
+  <CheckBox
+      android:id="@+id/checkBox"
+      android:layout_width="342dp"
+      android:layout_height="19dp"
+      android:checked="false"
+      android:text="Kablosuz internet"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+  <CheckBox
+      android:id="@+id/checkBox8"
+      android:layout_width="342dp"
+      android:layout_height="19dp"
+      android:checked="false"
+      android:text="Kuru temizleme"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+  <CheckBox
+      android:id="@+id/checkBox9"
+      android:layout_width="342dp"
+      android:layout_height="19dp"
+      android:checked="false"
+      android:text="Otopark"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+  <CheckBox
+      android:id="@+id/checkBox10"
+      android:layout_width="342dp"
+      android:layout_height="19dp"
+      android:checked="false"
+      android:text="Restoran"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+  <CheckBox
+      android:id="@+id/checkBox11"
+      android:layout_width="342dp"
+      android:layout_height="19dp"
+      android:checked="false"
+      android:text="Resepsiyon hizmeti"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+  <CheckBox
+      android:id="@+id/checkBox12"
+      android:layout_width="342dp"
+      android:layout_height="19dp"
+      android:checked="false"
+      android:text="Çamaşırhane"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
+
+  <TextView
+      android:id="@+id/textView33"
+      android:layout_width="124dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="10dp"
+      android:text="Otel Ruhsat Numarası"
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+
+  <EditText
+      android:id="@+id/hotelCost2"
+      android:layout_width="235dp"
+      android:layout_height="40dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="25dp"
+      android:inputType="text"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView29"
+      app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+
+  <TextView
+      android:id="@+id/textView34"
+      android:layout_width="124dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="25dp"
+      android:text="Turizm İşletme Belge No"
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+  <EditText
+      android:id="@+id/hotelCost3"
+      android:layout_width="235dp"
+      android:layout_height="40dp"
+      android:layout_marginEnd="25dp"
+      android:inputType="text"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView29"
+      app:layout_constraintTop_toBottomOf="@+id/hotelCost2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

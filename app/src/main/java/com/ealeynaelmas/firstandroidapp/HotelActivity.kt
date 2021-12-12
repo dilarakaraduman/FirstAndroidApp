@@ -21,9 +21,4 @@ class HotelActivity : AppCompatActivity() {
         val intent = Intent(applicationContext, MainActivity ::class.java)
         startActivity(intent)
     }
-
-    fun loadProfilePage(view : View){
-        val intent = Intent(applicationContext, ProfileActivity ::class.java)
-        startActivity(intent)
-    }
 }

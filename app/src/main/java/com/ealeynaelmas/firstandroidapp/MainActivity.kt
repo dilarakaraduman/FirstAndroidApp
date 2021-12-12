@@ -58,4 +58,14 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext, HotelListActivity ::class.java)
         startActivity(intent)
     }
+
+    fun loadMainPage(view : View){
+        val intent = Intent(applicationContext, MainActivity ::class.java)
+        startActivity(intent)
+    }
+
+    fun loadAddHotelPage(view : View){
+        val intent = Intent(applicationContext, AddHotel ::class.java)
+        startActivity(intent)
+    }
 }
