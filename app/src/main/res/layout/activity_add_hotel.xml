@@ -22,10 +22,11 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="20dp"
+      android:onClick="addHotelToDB"
       android:text="Otel Ekle"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/hotelCost3" />
+      app:layout_constraintTop_toBottomOf="@+id/DocumentNo" />
 
   <TextView
       android:id="@+id/textView24"
@@ -80,7 +81,7 @@
       app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
   <EditText
-      android:id="@+id/hotelCity"
+      android:id="@+id/HotelCity"
       android:layout_width="235dp"
       android:layout_height="40dp"
       android:layout_marginEnd="25dp"
@@ -104,7 +105,7 @@
       app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
   <EditText
-      android:id="@+id/hotelLocation"
+      android:id="@+id/HotelLocation"
       android:layout_width="235dp"
       android:layout_height="40dp"
       android:layout_marginEnd="25dp"
@@ -113,7 +114,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toEndOf="@+id/textView29"
-      app:layout_constraintTop_toBottomOf="@+id/hotelCity" />
+      app:layout_constraintTop_toBottomOf="@+id/HotelCity" />
 
   <TextView
       android:id="@+id/textView31"
@@ -128,7 +129,7 @@
       app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
   <EditText
-      android:id="@+id/hotelCost"
+      android:id="@+id/HotelCost"
       android:layout_width="235dp"
       android:layout_height="40dp"
       android:layout_marginEnd="25dp"
@@ -137,7 +138,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toEndOf="@+id/textView29"
-      app:layout_constraintTop_toBottomOf="@+id/hotelLocation" />
+      app:layout_constraintTop_toBottomOf="@+id/HotelLocation" />
 
   <TextView
       android:id="@+id/textView32"
@@ -150,10 +151,10 @@
       android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/hotelCost" />
+      app:layout_constraintTop_toBottomOf="@+id/HotelCost" />
 
   <CheckBox
-      android:id="@+id/checkBox"
+      android:id="@+id/Attribute1"
       android:layout_width="342dp"
       android:layout_height="19dp"
       android:checked="false"
@@ -163,54 +164,54 @@
       app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
   <CheckBox
-      android:id="@+id/checkBox8"
+      android:id="@+id/Attribute2"
       android:layout_width="342dp"
       android:layout_height="19dp"
       android:checked="false"
       android:text="Kuru temizleme"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute1" />
 
   <CheckBox
-      android:id="@+id/checkBox9"
+      android:id="@+id/Attribute3"
       android:layout_width="342dp"
       android:layout_height="19dp"
       android:checked="false"
       android:text="Otopark"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute2" />
 
   <CheckBox
-      android:id="@+id/checkBox10"
+      android:id="@+id/Attribute4"
       android:layout_width="342dp"
       android:layout_height="19dp"
       android:checked="false"
       android:text="Restoran"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute3" />
 
   <CheckBox
-      android:id="@+id/checkBox11"
+      android:id="@+id/Attribute5"
       android:layout_width="342dp"
       android:layout_height="19dp"
       android:checked="false"
       android:text="Resepsiyon hizmeti"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute4" />
 
   <CheckBox
-      android:id="@+id/checkBox12"
+      android:id="@+id/Attribute6"
       android:layout_width="342dp"
       android:layout_height="19dp"
       android:checked="false"
       android:text="Çamaşırhane"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute5" />
 
   <TextView
       android:id="@+id/textView33"
@@ -223,10 +224,10 @@
       android:textSize="18dp"
       android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute6" />
 
   <EditText
-      android:id="@+id/hotelCost2"
+      android:id="@+id/LicanceNo"
       android:layout_width="235dp"
       android:layout_height="40dp"
       android:layout_marginTop="10dp"
@@ -236,7 +237,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toEndOf="@+id/textView29"
-      app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute6" />
 
   <TextView
       android:id="@+id/textView34"
@@ -251,7 +252,7 @@
       app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
   <EditText
-      android:id="@+id/hotelCost3"
+      android:id="@+id/DocumentNo"
       android:layout_width="235dp"
       android:layout_height="40dp"
       android:layout_marginEnd="25dp"
@@ -260,6 +261,6 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toEndOf="@+id/textView29"
-      app:layout_constraintTop_toBottomOf="@+id/hotelCost2" />
+      app:layout_constraintTop_toBottomOf="@+id/LicanceNo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
