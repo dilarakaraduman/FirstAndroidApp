@@ -32,8 +32,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="274dp"
-        android:layout_height="76dp"
+        android:layout_width="277dp"
+        android:layout_height="139dp"
         android:layout_marginTop="10dp"
         android:fadingEdge="horizontal|vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,15 +48,17 @@
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:text="İsim"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="177dp"
-                android:layout_height="wrap_content"
-                android:text="Aleyna" />
+            <EditText
+                android:id="@+id/ContactName"
+                android:layout_width="176dp"
+                android:layout_height="34dp"
+                android:inputType="textPersonName"
+                android:textSize="12sp" />
         </TableRow>
 
         <TableRow
@@ -68,13 +70,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Soyisim"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Elmas" />
+            <EditText
+                android:id="@+id/ContactLastName"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:inputType="textPersonName"
+                android:textSize="12sp" />
 
         </TableRow>
 
@@ -87,13 +91,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="E-posta"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="a.aleynaelmas@gmail.com" />
+            <EditText
+                android:id="@+id/ContactMail"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp" />
         </TableRow>
 
         <TableRow
@@ -105,13 +111,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tel No"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0999 999 99 99" />
+            <EditText
+                android:id="@+id/ContactPhone"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:inputType="phone"
+                android:textSize="12sp" />
         </TableRow>
     </TableLayout>
 
@@ -132,7 +140,7 @@
     <TableLayout
         android:id="@+id/tableLayout2"
         android:layout_width="274dp"
-        android:layout_height="76dp"
+        android:layout_height="129dp"
         android:layout_marginTop="10dp"
         android:fadingEdge="horizontal|vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -149,13 +157,17 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="İsim"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="177dp"
-                android:layout_height="wrap_content"
-                android:text="Aleyna" />
+            <EditText
+                android:id="@+id/PersonName"
+                android:layout_width="174dp"
+                android:layout_height="34dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp" />
+
         </TableRow>
 
         <TableRow
@@ -167,13 +179,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Soyisim"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView13"
+            <EditText
+                android:id="@+id/PersonLastName"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Elmas" />
+                android:layout_height="34dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp" />
 
         </TableRow>
 
@@ -186,13 +201,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TC No"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView14"
+            <EditText
+                android:id="@+id/PersonTC"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="99999999999" />
+                android:layout_height="34dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="12sp" />
+
         </TableRow>
 
         <TableRow
@@ -204,66 +223,67 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tel No"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView16"
+            <EditText
+                android:id="@+id/PersonPhone"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0999 999 99 99" />
+                android:layout_height="34dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/ContactPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="0999 999 99 99"
+                android:textSize="12sp" />
         </TableRow>
     </TableLayout>
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="190dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="45dp"
-        android:text="Özel istekte bulunmak istiyorum"
-        android:textSize="10dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="150dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textSize="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toEndOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Özel istekte bulunmak istiyorum." />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="224dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="5dp"
-        android:text="Özel istekte bulunmak istemiyorum."
-        android:textSize="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+        <EditText
+            android:id="@+id/wishText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Özel istekte bulunmak istemiyorum." />
+    </RadioGroup>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="132dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addHotelToDB"
         android:text="Onay"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
-        app:layout_constraintVertical_bias="0.65999997" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

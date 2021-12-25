@@ -177,7 +177,7 @@
         android:layout_width="199dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:onClick="loadHotelList"
+        android:onClick="getDataFromDB"
         android:text="Ara"
         android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"

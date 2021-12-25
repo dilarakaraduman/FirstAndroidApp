@@ -6,17 +6,12 @@ class Rezervation {
     var rhotelname:String = ""
     var rpersoncount:Int = 0
     var rchilcount:Int = 0
-    var rchecindate:String = ""
+    var rcheckindate:String = ""
     var rcheckoutdate:String = ""
-    var rcontactname:String = ""
-    var rcontactsurname:String = ""
-    var rcontactemail:String = ""
-    var rcontactphonenumber:String = ""
+}
 
-    var rpersonname: String = ""
-    var rpersonsurname: String = ""
-    var rpersontc: Long = 0
-    var rpersonphonenumber: String = ""
-    var rspecialrequest: Boolean = false
-    var rspecialrequestText = ""
+class RezervationData {
+    companion object {
+        lateinit var rezervation:Rezervation
+    }
 }
